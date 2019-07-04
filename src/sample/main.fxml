@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <!--fx:controller="ba.unsa.etf.rs.tutorijal9.GlavniController"-->
+    <left>
+        <TableView fx:id="tabelaDriver" prefHeight="400.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="imeDrivera" prefWidth="87.19998300075531" text="first name" />
+                <TableColumn fx:id="prezimeDrivera" prefWidth="85.60004425048828" text="last name" />
+            </columns>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+        </TableView>
+    </left>
+    <center>
+        <TableView fx:id="tabelaBus" prefHeight="400.0" prefWidth="208.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="makerBus" prefWidth="105.60002440214157" text="bus maker" />
+                <TableColumn fx:id="serijaBus" prefWidth="112.7999267578125" text="bus serie" />
+            </columns>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+        </TableView>
+    </center>
+    <right>
+        <VBox prefHeight="417.0" prefWidth="108.0" BorderPane.alignment="CENTER">
+            <children>
+                <GridPane prefHeight="220.0" prefWidth="108.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.20000457763672" minWidth="10.0" prefWidth="131.99999237060547" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="303.99998779296874" minHeight="0.0" prefHeight="108.4" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="296.00001831054686" minHeight="10.0" prefHeight="112.4" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button mnemonicParsing="false"  prefHeight="26.0" prefWidth="87.0" text="Add driver" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="92.0" text="Add bus" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Button>
+                        <Button mnemonicParsing="false"  prefHeight="26.0" prefWidth="97.0" text="Delete driver" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Button>
+                        <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="88.0" text="Delete bus" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Change driver" GridPane.halignment="CENTER" />
+                        <Button mnemonicParsing="false"  prefHeight="27.0" prefWidth="92.0" text="Change bus" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </right>
+</BorderPane>
